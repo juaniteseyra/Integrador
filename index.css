@@ -53,6 +53,7 @@
     transition: 1.4s;
     transform: rotateY(360deg) scale(1.7);
     transform-style: preserve-3d;
+    filter: saturate(200%);
 
 }
 
@@ -71,8 +72,7 @@
     height: 50%;
     display: flex;
     justify-content: center;
-    background-image: url(./img/fondo.jpg);
-    background-size: 100%;
+    
     
 }
 
@@ -93,8 +93,7 @@
     color: #e09f3e;
     width: 100%;
     height: 100vh;
-    background-image: url(./img/fondo.jpg);
-    background-size: 100%;
+    background-color: black;
 }
 
 .info h1 {
@@ -115,8 +114,6 @@
 }
 
 .info h3:hover{
-    font-size: 3em;
-    transition: 1s ease-in;
     cursor: pointer;
 }
 
@@ -144,11 +141,11 @@
 .tournaments{
     width: 100%;
     height: 80vh;
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: white;
+    color: black;
     
 }
 
@@ -193,7 +190,7 @@
 }
 
 
-.btn-1{
+.btn-{
     width: 15%;
     padding: 10px;
     background-color: transparent;
@@ -208,7 +205,7 @@
     
 }
 
-.btn-1::after{
+.btn-::after{
     content: "";
     width: 15%;
     height: 20%;
@@ -222,7 +219,7 @@
     transition: all 0.2s;
     
 }
-.btn-1::before{
+.btn-::before{
     content: "";
     width: 15%;
     height: 20%;
@@ -236,12 +233,12 @@
     transition: all 0.2s;
 }
 
-.btn-1:hover::after{
+.btn-:hover::after{
     width: 20%;
     height: 50%;
 }
 
-.btn-1:hover::before{
+.btn-:hover::before{
     width: 20%;
     height: 50%;
 }
@@ -398,10 +395,11 @@
 .contact-us{
     width: 100%;
     height: 45vh;
-    background-color: white;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 .title-contacto{
@@ -450,6 +448,8 @@
     padding-top: 1%;
     margin-top: 2%;
     font-weight: 900;
+    border-radius: 4px;
+    border: 1px solid grey;
 
 }
 
@@ -458,6 +458,9 @@
     height: 300%;
     margin-top: 1%;
     font-weight: 900;
+    border-radius: 4px;
+    border: 1px solid grey;
+    
 }
 
 .botton-enviar{
@@ -467,11 +470,16 @@
     border-radius: 4px;
     cursor: pointer;
     font-weight: 900;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
+    background-color: black;
+    color: white;
 }
 
 .botton-enviar:hover{
     opacity: 0.9;
-    background-color: #1f53c5;
+    background-color: grey;
     color: white;
+    border: 1px solid black;
 }
+
+
