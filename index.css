@@ -190,7 +190,7 @@
 }
 
 
-.btn-{
+.btn-1{
     width: 15%;
     padding: 10px;
     background-color: transparent;
@@ -205,7 +205,7 @@
     
 }
 
-.btn-::after{
+.btn-1::after{
     content: "";
     width: 15%;
     height: 20%;
@@ -219,7 +219,7 @@
     transition: all 0.2s;
     
 }
-.btn-::before{
+.btn-1::before{
     content: "";
     width: 15%;
     height: 20%;
@@ -233,12 +233,12 @@
     transition: all 0.2s;
 }
 
-.btn-:hover::after{
+.btn-1:hover::after{
     width: 20%;
     height: 50%;
 }
 
-.btn-:hover::before{
+.btn-1:hover::before{
     width: 20%;
     height: 50%;
 }
